@@ -1,19 +1,25 @@
-
-
 function App() {
   return (
-    <div className="min-h-[100vh] bg-white">
-      <nav className="flex h-12 /60 backdrop-blur-sm  justify-between p-3 bg-[#FDFEFF]">
-        <div className="">
-            <h2>Pesatrak</h2>
+    <div className="min-h-screen bg-white pt-20">
+      <div className="mx-auto flex max-w-md flex-col items-center text-center">
+        <h1 className="text-3xl font-bold">Pesatrak</h1>
+        <h1 className="pb-5 text-2xl text-gray-700 font-bold">
+          Welcome Back
+        </h1>
+
+        <div className="flex flex-col gap-3">
+          <button className="flex items-center justify-center gap-3 rounded border px-6 py-2">
+            <img className="h-7 w-7" src="/G.svg" alt="Google" />
+            Continue with Google
+          </button>
+
+          <button className="flex justify-center gap-3 rounded border px-6 py-2">
+             <img className="h-7 w-7" src="/Apple.svg" alt="Apple" />
+            Continue with Apple
+          </button>
+          <hr className="text-gray-200"/>
         </div>
-        <ul className="flex gap-4">
-          <li>Componets</li>
-          <li>Templates</li>
-          <li>Contact</li>
-          <li>Sign in</li>
-        </ul>
-      </nav>
+      </div>
     </div>
   )
 }
